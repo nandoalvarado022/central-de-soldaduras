@@ -1,0 +1,85 @@
+{
+  "name": "mi-proyecto/drupal10",
+  "description": "Proyecto base con Drupal 10",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "0": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "require": {
+    "drupal/core-recommended": "^10.2",
+    "drupal/core-composer-scaffold": "^10.2",
+    "drupal/core-project-message": "^10.2",
+    "drupal/core-dev": "^10.2",
+    "composer/installers": "^1.2",
+    "drush/drush": "^12.0",
+    "drupal/admin_toolbar": "^3.6",
+    "drupal/backup_migrate": "^5.1",
+    "drupal/key": "^1.20",
+    "drupal/mailsystem": "^4.5",
+    "drupal/menu_link_attributes": "^1.5",
+    "drupal/smtp": "^1.4",
+    "drupal/catalog_lite": "^1.4",
+    "drupal/classy": "^2.0",
+    "drupal/flexslider": "^3.0@alpha",
+    "drupal/libraries": "^4.1",
+    "drupal/superfish": "^1.13"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ]
+    },
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
+      "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
+    ],
+    "post-update-cmd": [
+      "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
+      "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true,
+      "php-http/discovery": true,
+      "drupal/core-project-message": true,
+      "phpstan/extension-installer": true,
+      "tbachert/spi": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
