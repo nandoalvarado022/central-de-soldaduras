@@ -1,0 +1,93 @@
+# =========================
+# MACOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# =========================
+# ENV FILES
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# DOCKER
+# =========================
+*.log
+logs/
+docker-logs/
+tmp/
+docker-compose.override.yml
+
+# =========================
+# DRUPAL (build-drupal)
+# =========================
+
+# Composer vendor
+build-drupal/vendor/
+build-drupal/composer.phar
+build-drupal/composer.lock
+
+# Drupal core (autogenerado)
+build-drupal/web/core/
+
+# Contrib modules/themes/profiles (autogenerados por composer)
+build-drupal/web/modules/contrib/
+build-drupal/web/themes/contrib/
+build-drupal/web/profiles/contrib/
+build-drupal/web/libraries/
+
+# Drush contrib
+build-drupal/drush/Commands/contrib/
+
+# Files generados por Drupal
+build-drupal/web/sites/*/files/
+build-drupal/web/sites/*/files/**
+
+# Private files
+build-drupal/private/
+build-drupal/web/sites/*/private/
+
+# Local settings — NO versionar
+build-drupal/web/sites/*/settings.local.php
+build-drupal/web/sites/*/services.local.yml
+
+# Backups & dumps
+build-drupal/**/*.sql
+build-drupal/**/*.sqlite
+build-drupal/drush-backups/
+
+# Node inside custom themes/modules
+build-drupal/web/modules/custom/*/node_modules/
+build-drupal/web/themes/custom/*/node_modules/
+
+# =========================
+# NODE / FRONTEND
+# =========================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# =========================
+# IDE
+# =========================
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# OTHER
+# =========================
+dump/
+backups/
+
+# =========================
+# Permitir módulos y temas custom
+# =========================
+!web/modules/custom/
+!web/themes/custom/
