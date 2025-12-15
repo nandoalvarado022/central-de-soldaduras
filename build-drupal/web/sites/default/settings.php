@@ -893,11 +893,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'cspi_web_test',
+  'database' => 'test_bd',
   'username' => 'root',
   'password' => 'test',
   'prefix' => '',
-  'host' => 'cspi_db',
+  'host' => 'db',
   'port' => '3306',
   'isolation_level' => 'READ COMMITTED',
   'driver' => 'mysql',
