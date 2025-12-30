@@ -1,8 +1,7 @@
-version: '3.1'
 services:
   db:
     container_name: cspi_db
-    image: mysql:5.7
+    image: mariadb:latest
     command: 
       - --default-authentication-plugin=mysql_native_password
       - --innodb-buffer-pool-size=1G
@@ -44,7 +43,8 @@ services:
     dns: 
       - "8.8.8.8"
       - "1.1.1.1"
-    command: /usr/sbin/init && systemctl restart php-fpm.service && systemctl restart nginx.service && cd /usr/share/nginx/html 
+    # command: /usr/sbin/init && systemctl restart php-fpm.service && systemctl restart nginx.service && cd /usr/share/nginx/html 
+    command: bash -c "service nginx start && service php8.2-fpm start && tail -f /dev/null" 
     extra_hosts:
       - "host.docker.internal:host-gateway"
       # extra host for environment DEV local
@@ -59,3 +59,4 @@ services:
           memory: $RAM_RES
 volumes:
   cspi_db:
+  

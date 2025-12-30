@@ -30,7 +30,8 @@
     "drupal/classy": "^2.0",
     "drupal/flexslider": "^3.0@alpha",
     "drupal/libraries": "^4.1",
-    "drupal/superfish": "^1.13"
+    "drupal/superfish": "^1.13",
+    "drupal/twig_tweak": "^3.4"
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
