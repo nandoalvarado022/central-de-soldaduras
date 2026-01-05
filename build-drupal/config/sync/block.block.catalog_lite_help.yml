@@ -1,0 +1,22 @@
+uuid: 35db8aff-7b25-4ace-a93a-aa08d86aef87
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: kWCxtYgFa0a6nqQUqwOsYO7mac46j7QPQ_lrVo6H8GA
+id: catalog_lite_help
+theme: catalog_lite
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

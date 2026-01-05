@@ -1,0 +1,71 @@
+uuid: 7f36e426-41a2-4473-ae40-a4d38ddfb45c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.field.contact_message.personal.field_correo_electronico
+    - field.field.contact_message.personal.field_nombre_completo
+id: contact_message.personal.default
+targetEntityType: contact_message
+bundle: personal
+mode: default
+content:
+  copy:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_correo_electronico:
+    type: email_default
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_nombre_completo:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  mail:
+    weight: -40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: -50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  preview:
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  recipient:
+    weight: -30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

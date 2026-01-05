@@ -1,0 +1,22 @@
+uuid: dbf743ac-b320-484b-8a3c-14c7a09bd9ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: fuvEw-zbduM6UUr1wkmG5AFIlnp8nbbxF3FKqzglm10
+id: catalog_lite_messages
+theme: catalog_lite
+region: system_messages
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: 43bff84e-d443-4a6b-980f-f74ce3b85f7f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:53a869d1-249f-4e08-935b-1edbb60d0834'
+  module:
+    - block_content
+    - system
+  theme:
+    - catalog_lite
+id: articlescarousel
+theme: catalog_lite
+region: highlighted_top
+weight: 0
+provider: null
+plugin: 'block_content:53a869d1-249f-4e08-935b-1edbb60d0834'
+settings:
+  id: 'block_content:53a869d1-249f-4e08-935b-1edbb60d0834'
+  label: 'Valores corporativos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n/alternative-slideshow"

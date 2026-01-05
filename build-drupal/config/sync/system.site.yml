@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
+uuid: 25a7efee-1b87-4456-9a31-c2660d351efd
+name: 'Central de soldaduras'
+mail: noreply@domain.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/11
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

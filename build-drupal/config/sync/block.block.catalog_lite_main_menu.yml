@@ -1,0 +1,32 @@
+uuid: b6b52a26-d2ed-417f-8f85-214a17a4dc09
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: AvG5JisWTL0yOjar6feL8YAwQcKrM0LOs8VVMksq9vc
+id: catalog_lite_main_menu
+theme: catalog_lite
+region: sidebar_second
+weight: -19
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/1\r\n/node/2\r\n/node/3\r\n/node/5\r\n/node/6\r\n/node/7\r\n/node"

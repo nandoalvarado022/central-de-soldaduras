@@ -1,0 +1,25 @@
+uuid: dd298e28-ccb2-4125-a5d0-e78647ba7b94
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: 8zczxzz2w7-EQREiqtjNrgk7FD02uwdPsRjHhhglNOM
+id: catalog_lite_branding
+theme: catalog_lite
+region: header_top_first
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

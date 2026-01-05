@@ -1,0 +1,19 @@
+uuid: 9e24f3ee-063f-4bbc-ac9c-21eb40775df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sumario
+    - node.type.article
+id: node.article.field_sumario
+field_name: field_sumario
+entity_type: node
+bundle: article
+label: Sumario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

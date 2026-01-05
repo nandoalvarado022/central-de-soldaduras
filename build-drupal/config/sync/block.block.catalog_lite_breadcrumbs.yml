@@ -1,0 +1,27 @@
+uuid: d00dd736-d286-4d8f-aa25-031c0b4accb3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: tCvNtEgXZ4K4e3F4h4np5zTA38qJS3PiZjlFEEBLdYM
+id: catalog_lite_breadcrumbs
+theme: catalog_lite
+region: banner
+weight: -19
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/alternative-slideshow\r\n"

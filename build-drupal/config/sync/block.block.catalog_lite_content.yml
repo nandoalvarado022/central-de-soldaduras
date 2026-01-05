@@ -1,0 +1,22 @@
+uuid: 5148c2f6-8bc4-4545-9b88-28463d44135b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: 6vL6WlJ9k482b56pEGsqgXRGkRIKLaaJgJpTtwGgTC8
+id: catalog_lite_content
+theme: catalog_lite
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

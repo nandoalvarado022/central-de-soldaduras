@@ -1,0 +1,31 @@
+uuid: 6518f8b3-1635-447a-90a8-0f4a27541e20
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4ec088c4-6b1e-4925-8222-70bc745884db'
+  module:
+    - block_content
+    - system
+  theme:
+    - catalog_lite
+id: searchandview
+theme: catalog_lite
+region: banner
+weight: -21
+provider: null
+plugin: 'block_content:4ec088c4-6b1e-4925-8222-70bc745884db'
+settings:
+  id: 'block_content:4ec088c4-6b1e-4925-8222-70bc745884db'
+  label: 'Search and view'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: ''

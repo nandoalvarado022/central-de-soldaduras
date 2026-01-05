@@ -1,0 +1,25 @@
+uuid: d63169fe-aa82-4469-9aac-2af789b0d474
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.services
+  module:
+    - system
+  theme:
+    - catalog_lite
+id: services
+theme: catalog_lite
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:services'
+settings:
+  id: 'system_menu_block:services'
+  label: Servicios
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

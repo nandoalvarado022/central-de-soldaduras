@@ -1,0 +1,41 @@
+uuid: 04870f7d-df20-4ac1-b703-20a30f18e849
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria.body
+    - field.field.node.galeria.field_gallery_imagenes
+    - node.type.galeria
+  module:
+    - image
+    - text
+    - user
+id: node.galeria.default
+targetEntityType: node
+bundle: galeria
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_gallery_imagenes:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

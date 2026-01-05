@@ -1,0 +1,25 @@
+uuid: 9ccb6fc4-741f-4fe4-bf9d-dbb649b1e4a9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6430a9c9-6fa1-450d-a858-ade2cc3bb1fb'
+  module:
+    - block_content
+  theme:
+    - catalog_lite
+id: subscribe_2
+theme: catalog_lite
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:6430a9c9-6fa1-450d-a858-ade2cc3bb1fb'
+settings:
+  id: 'block_content:6430a9c9-6fa1-450d-a858-ade2cc3bb1fb'
+  label: Subscribe
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

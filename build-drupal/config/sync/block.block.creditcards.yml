@@ -1,0 +1,25 @@
+uuid: 7ba7ddb9-a451-40e3-be28-7fb7acd80da5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1bcc332d-7b7f-472a-89ac-de93e5341575'
+  module:
+    - block_content
+  theme:
+    - catalog_lite
+id: creditcards
+theme: catalog_lite
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:1bcc332d-7b7f-472a-89ac-de93e5341575'
+settings:
+  id: 'block_content:1bcc332d-7b7f-472a-89ac-de93e5341575'
+  label: 'Credit cards'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

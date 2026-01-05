@@ -1,0 +1,22 @@
+uuid: f39b86e3-f4b7-4317-a258-768a8d044027
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: zZRXYae-nkknkdhkWYTnccbLWhPbfbd7I83AD_8JlFk
+id: catalog_lite_powered
+theme: catalog_lite
+region: footer_first
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 44f14e93-b38c-4b11-9cb0-130cd3fedd74
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - catalog_lite
+_core:
+  default_config_hash: j-D0rfGGmQdiZd57Lbis3itn-bTLK8jui1ZXe0VvNk8
+id: catalog_lite_page_title
+theme: catalog_lite
+region: banner
+weight: -18
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/alternative-slideshow"

@@ -1,0 +1,31 @@
+uuid: 32209c22-c9ce-40e8-8aca-5819bf17693e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1e13e57d-3d06-41af-b9e7-d4afafa3422d'
+  module:
+    - block_content
+    - system
+  theme:
+    - catalog_lite
+id: newyorkoffice_2
+theme: catalog_lite
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'block_content:1e13e57d-3d06-41af-b9e7-d4afafa3422d'
+settings:
+  id: 'block_content:1e13e57d-3d06-41af-b9e7-d4afafa3422d'
+  label: 'New York Office'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /contact

@@ -1,0 +1,37 @@
+uuid: ab76b0ea-db0a-42c4-bb3c-35f108d6e445
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.field.contact_message.personal.field_correo_electronico
+    - field.field.contact_message.personal.field_nombre_completo
+id: contact_message.personal.default
+targetEntityType: contact_message
+bundle: personal
+mode: default
+content:
+  field_correo_electronico:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nombre_completo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

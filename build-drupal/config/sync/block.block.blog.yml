@@ -1,0 +1,25 @@
+uuid: 6985785d-4c62-4de3-996c-f23b2f3d8b9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.blog
+  module:
+    - system
+  theme:
+    - catalog_lite
+id: blog
+theme: catalog_lite
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'system_menu_block:blog'
+settings:
+  id: 'system_menu_block:blog'
+  label: Blog
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

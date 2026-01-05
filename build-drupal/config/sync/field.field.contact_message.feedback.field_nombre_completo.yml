@@ -1,0 +1,19 @@
+uuid: 48f588f6-dd18-4b1d-98e1-12b9fe6a01fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_nombre_completo
+id: contact_message.feedback.field_nombre_completo
+field_name: field_nombre_completo
+entity_type: contact_message
+bundle: feedback
+label: 'Nombre completo'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 6b5fb51d-9fdc-483a-9c90-29cb4ec57c47
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e920d42e-0379-49df-b56e-6f1213df2c78'
+  module:
+    - block_content
+  theme:
+    - catalog_lite
+id: follow
+theme: catalog_lite
+region: slideout
+weight: -15
+provider: null
+plugin: 'block_content:e920d42e-0379-49df-b56e-6f1213df2c78'
+settings:
+  id: 'block_content:e920d42e-0379-49df-b56e-6f1213df2c78'
+  label: Follow
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

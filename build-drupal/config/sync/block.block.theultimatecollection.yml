@@ -1,0 +1,31 @@
+uuid: cd8ffc31-47f8-428a-a57f-b43a183c47d0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:73487c20-e16e-431e-8a2b-10600ad33799'
+  module:
+    - block_content
+    - system
+  theme:
+    - catalog_lite
+id: theultimatecollection
+theme: catalog_lite
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:73487c20-e16e-431e-8a2b-10600ad33799'
+settings:
+  id: 'block_content:73487c20-e16e-431e-8a2b-10600ad33799'
+  label: 'Productos más vendidos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n"

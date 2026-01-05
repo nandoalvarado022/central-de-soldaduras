@@ -1,0 +1,25 @@
+uuid: 2fdd7aef-bcdb-414c-b10e-d2eeb6dc05a4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:193e2bd8-bc52-41ae-aac7-3b68a91893aa'
+  module:
+    - block_content
+  theme:
+    - catalog_lite
+id: contactinfofooter_2
+theme: catalog_lite
+region: sub_footer_top_third
+weight: 0
+provider: null
+plugin: 'block_content:193e2bd8-bc52-41ae-aac7-3b68a91893aa'
+settings:
+  id: 'block_content:193e2bd8-bc52-41ae-aac7-3b68a91893aa'
+  label: 'Contact info (footer)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
