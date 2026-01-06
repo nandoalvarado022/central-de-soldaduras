@@ -58,3 +58,5 @@ services:
           memory: $RAM_MAX
         reservations:
           memory: $RAM_RES
+volumes:
+  cspi_db:
