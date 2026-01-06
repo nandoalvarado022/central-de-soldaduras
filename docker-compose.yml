@@ -26,7 +26,7 @@ services:
     links:
       - db:db
     volumes:
-      - ./build-drupal/web:/var/www/html
+      - $PATH_TO_REPO:/var/www/html
     image: cspi_amazon_linux
     build:
       context: .
