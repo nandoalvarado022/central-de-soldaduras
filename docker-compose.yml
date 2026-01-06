@@ -26,7 +26,7 @@ services:
     links:
       - db:db
     volumes:
-      - $PATH_TO_REPO:/var/www/html
+      - .:/var/www/html
     image: cspi_amazon_linux
     build:
       context: .
