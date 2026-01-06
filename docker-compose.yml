@@ -2,7 +2,7 @@ services:
   db:
     container_name: cspi_db
     image: mariadb:latest
-    command: 
+    command:
       - --default-authentication-plugin=mysql_native_password
       - --innodb-buffer-pool-size=1G
       - --character-set-server=utf8mb4
@@ -11,7 +11,7 @@ services:
       MYSQL_DATABASE: $BD_NAME
       MYSQL_USER: $BD_PASSWORD_USER
       MYSQL_PASSWORD: $BD_PASSWORD_ROOT
-      MYSQL_ROOT_PASSWORD: $BD_PASSWORD_ROOT 
+      MYSQL_ROOT_PASSWORD: $BD_PASSWORD_ROOT
     volumes:
       - ./dump:/docker-entrypoint-initdb.d
       - cspi_db:/var/lib/mysql
@@ -23,12 +23,13 @@ services:
     container_name: cspi_amazon_linux
     depends_on:
       - db
-    links: 
-          - db:db
+    links:
+      - db:db
     volumes:
-      - $PATH_TO_REPO:/var/www/html
+      - .:/var/www/central-de-soldaduras
     image: cspi_amazon_linux
-    build: 
+    build:
+      context: .
       dockerfile: Dockerfile
       args:
         XDEBUG_VERSION: $XDEBUG_VERSION
@@ -40,11 +41,11 @@ services:
       - "$PORT_HTTPS_HOST:443"
     networks:
       - default
-    dns: 
+    dns:
       - "8.8.8.8"
       - "1.1.1.1"
     # command: /usr/sbin/init && systemctl restart php-fpm.service && systemctl restart nginx.service && cd /usr/share/nginx/html 
-    command: bash -c "service nginx start && service php8.2-fpm start && tail -f /dev/null" 
+    command: bash -c "service nginx start && service php8.2-fpm start && tail -f /dev/null"
     extra_hosts:
       - "host.docker.internal:host-gateway"
       # extra host for environment DEV local
@@ -59,4 +60,3 @@ services:
           memory: $RAM_RES
 volumes:
   cspi_db:
-  
