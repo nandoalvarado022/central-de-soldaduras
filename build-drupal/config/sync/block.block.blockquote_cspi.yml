@@ -1,0 +1,31 @@
+uuid: b5326b7b-65a5-4960-854f-3a6250bd9ed0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ac6b88e-3a7b-4a6e-ab46-aa95d637a47f'
+  module:
+    - block_content
+    - system
+  theme:
+    - cspi
+id: blockquote_cspi
+theme: cspi
+region: featured
+weight: 0
+provider: null
+plugin: 'block_content:6ac6b88e-3a7b-4a6e-ab46-aa95d637a47f'
+settings:
+  id: 'block_content:6ac6b88e-3a7b-4a6e-ab46-aa95d637a47f'
+  label: Blockquote
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n/alternative-slideshow"

@@ -1,0 +1,59 @@
+{# Bloque Valores corporativos #}
+
+{% set view_results = drupal_view_result('home_bottom_articles', 'default') %}
+
+<div class="valores-corporativos-block">
+  <h3>Valores corporativos</h3>
+	<div class="owl d-block view-mt-carousel view-articles-grid contextual-region view view-mt-articles-carousel view-id-mt_articles_carousel view-display-id-block_1">
+		<ul class="owl-carousel mt-carousel-container mt-carousel-articles owl-loaded owl-drag">
+			{% for row in view_results %}
+				{% set node = row._entity %}
+				{% set bg_url = node.field_image.entity ? file_url(node.field_image.entity.uri.value) : '' %}
+				<li class="mt-carousel-item">
+					<div class="views-field-field-image">
+						<div class="overlay-container">
+							<img class="image-style-large" src="{{ bg_url }}" data-entity-uuid="ea00e98e-a3fa-4dba-bc4b-fa2ae6e98980" data-entity-type="file" alt="First Article" title="Second Article" typeof="Image">
+						</div>
+					</div>
+					<div class="views-field views-field-title">
+						<h5 class="field-content">
+							<a href="node/{{ node.id }}" hreflang="en">{{ node.title.value }}</a>
+						</h5>
+					</div>
+					<div class="article-meta d-flex justify-content-center">
+						<div class="article-tags">
+							<a href="node" hreflang="en">Green</a>
+						</div>
+						<div class="article-date">
+							on 2019-04-05
+						</div>
+					</div>
+				</li>
+			{% endfor %}
+			{# <li class="mt-carousel-item">
+																																<div class="views-field-field-image">
+																																	<div class="overlay-container">
+																																		<img class="image-style-large" src="/drupalizing/drz-demo-catalog-lite/site/sites/default/files/inline-images/article-2.jpg" data-entity-uuid="fb15ff9a-ad4b-469a-936f-9302fad50a90" data-entity-type="file" alt="Second Article" title="Second Article" typeof="Image">
+																																	</div>
+																																</div>
+																																<div class="views-field views-field-title">
+																																	<h5 class="field-content">
+																																		<a href="node/9" hreflang="en">Second Article</a>
+																																	</h5>
+																																</div>
+																																<div class="article-meta d-flex justify-content-center">
+																																	<div class="article-tags">
+																																		<a href="node" hreflang="en">Red</a>
+																																	</div>
+																																	<div class="article-date">
+																																		on 2019-03-04
+																																	</div>
+																																</div>
+																															</li> #}
+		</ul>
+		{# <div class="more-link">
+        <a href="node">Check all articles</a>
+    </div> 
+    #}
+	</div>
+</div>

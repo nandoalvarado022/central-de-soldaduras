@@ -5,11 +5,11 @@ dependencies:
   module:
     - help
   theme:
-    - catalog_lite
+    - cspi
 _core:
   default_config_hash: kWCxtYgFa0a6nqQUqwOsYO7mac46j7QPQ_lrVo6H8GA
 id: catalog_lite_help
-theme: catalog_lite
+theme: cspi
 region: content
 weight: -11
 provider: null

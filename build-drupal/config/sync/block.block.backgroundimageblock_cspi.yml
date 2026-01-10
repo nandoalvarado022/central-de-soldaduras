@@ -1,0 +1,31 @@
+uuid: 37daf0f3-00a8-4ef2-9506-742ce06b6031
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:12efc3e9-8895-4bcd-b95a-086e687e9b79'
+  module:
+    - block_content
+    - system
+  theme:
+    - cspi
+id: backgroundimageblock_cspi
+theme: cspi
+region: content_top_highlighted
+weight: 0
+provider: null
+plugin: 'block_content:12efc3e9-8895-4bcd-b95a-086e687e9b79'
+settings:
+  id: 'block_content:12efc3e9-8895-4bcd-b95a-086e687e9b79'
+  label: 'Background image block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n/alternative-slideshow"

@@ -1,0 +1,31 @@
+uuid: 9a950c89-928b-4cd6-bb69-741bd6da3562
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ccbe0945-be17-4c9d-9e62-f725e630ec01'
+  module:
+    - block_content
+    - system
+  theme:
+    - cspi
+id: teampresentation_cspi
+theme: cspi
+region: content_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:ccbe0945-be17-4c9d-9e62-f725e630ec01'
+settings:
+  id: 'block_content:ccbe0945-be17-4c9d-9e62-f725e630ec01'
+  label: 'Team Presentation'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n/alternative-slideshow"

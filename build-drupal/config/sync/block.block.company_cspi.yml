@@ -1,0 +1,25 @@
+uuid: 0741f563-f91d-41a0-a298-cd2b3dba3e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mt-footer-menu-three
+  module:
+    - system
+  theme:
+    - cspi
+id: company_cspi
+theme: cspi
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:mt-footer-menu-three'
+settings:
+  id: 'system_menu_block:mt-footer-menu-three'
+  label: Compañía
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

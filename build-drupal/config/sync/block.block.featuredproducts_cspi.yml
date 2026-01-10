@@ -1,0 +1,31 @@
+uuid: ba628a21-941c-42b6-8f6e-68e4d1fa8482
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d6046db7-617d-4709-b714-ce2eaae73b16'
+  module:
+    - block_content
+    - system
+  theme:
+    - cspi
+id: featuredproducts_cspi
+theme: cspi
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:d6046db7-617d-4709-b714-ce2eaae73b16'
+settings:
+  id: 'block_content:d6046db7-617d-4709-b714-ce2eaae73b16'
+  label: 'Second product'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n/alternative-slideshow"

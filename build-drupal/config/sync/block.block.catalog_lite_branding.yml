@@ -5,11 +5,11 @@ dependencies:
   module:
     - system
   theme:
-    - catalog_lite
+    - cspi
 _core:
   default_config_hash: 8zczxzz2w7-EQREiqtjNrgk7FD02uwdPsRjHhhglNOM
 id: catalog_lite_branding
-theme: catalog_lite
+theme: cspi
 region: header_top_first
 weight: -6
 provider: null

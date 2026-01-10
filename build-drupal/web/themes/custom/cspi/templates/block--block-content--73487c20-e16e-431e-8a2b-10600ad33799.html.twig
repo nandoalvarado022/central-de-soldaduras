@@ -1,0 +1,34 @@
+{# Bloque de productos más vendidos #}
+
+<div class="view-articles-grid view-articles">
+	{% set view_results = drupal_view_result('home_articulos', 'default') %}
+</div>
+
+<div class="view-products-grid view-mt-products">
+	<div class="view-content">
+  <h4>Productos más vendidos</h4>
+		<ul class="row list-unstyled">
+			{% if view_results %}
+				{% for row in view_results %}
+					{% set node = row._entity %}
+					<li class="col-lg-4 col-md-6 views-row">
+						<div class="product-thumbnail-container">
+							<a href="{{ path('entity.node.canonical', {'node': node.id}) }}">
+								{% if node.field_image.entity %}
+									<img class="image-style-large" src="{{ file_url(node.field_image.entity.uri.value) }}" alt="{{ node.title.value }}">
+								{% else %}
+									<img class="image-style-large" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCBmaWxsPSIjZTBlMGUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjIwMCIgeT0iMTUwIiBzdHlsZT0iZmlsbDojYTBhMGEwO2ZvbnQtc2l6ZToyNHB4O2ZvbnQtZmFtaWx5OkFyaWFsIj5ObyBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="No image">
+								{% endif %}
+							</a>
+						</div>
+						<div class="views-field views-field-title">
+							<h5 class="field-content">
+								<a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ node.title.value }}</a>
+							</h5>
+						</div>
+					</li>
+				{% endfor %}
+			{% endif %}
+		</ul>
+	</div>
+</div>

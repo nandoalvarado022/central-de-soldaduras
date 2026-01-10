@@ -5,11 +5,11 @@ dependencies:
   module:
     - system
   theme:
-    - catalog_lite
+    - cspi
 _core:
   default_config_hash: fuvEw-zbduM6UUr1wkmG5AFIlnp8nbbxF3FKqzglm10
 id: catalog_lite_messages
-theme: catalog_lite
+theme: cspi
 region: system_messages
 weight: -7
 provider: null

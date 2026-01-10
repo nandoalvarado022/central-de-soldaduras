@@ -1,0 +1,31 @@
+uuid: 08bc8516-cbc4-4c82-8268-62809b3556f7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:08f9284e-643d-4101-8fbc-2b32cb3e8fb6'
+  module:
+    - block_content
+    - system
+  theme:
+    - cspi
+id: personalizedforyou_2_cspi
+theme: cspi
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:08f9284e-643d-4101-8fbc-2b32cb3e8fb6'
+settings:
+  id: 'block_content:08f9284e-643d-4101-8fbc-2b32cb3e8fb6'
+  label: 'Personalized for you'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /alternative-slideshow

@@ -1,0 +1,14 @@
+.node__side {
+
+  .affix-top {
+    display: none;
+  }
+}
+
+h4 {
+  color: #df8601;
+}
+
+.logo-and-site-name-wrapper img {
+  width: 200px;
+}

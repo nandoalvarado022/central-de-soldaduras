@@ -1,0 +1,23 @@
+uuid: 02db417b-923c-4709-9e7c-274cf2f13caa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cspi
+id: sitebranding_4_cspi
+theme: cspi
+region: slideout
+weight: -18
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - catalog_lite
+    - cspi
 _core:
   default_config_hash: zvHp-ijmc8b6zrChJnlceCQ3xBIma1-LZyjzdsW-JCA
 id: catalog_lite_local_actions
-theme: catalog_lite
+theme: cspi
 region: content
 weight: -10
 provider: null

@@ -1,0 +1,25 @@
+uuid: b5b0ad50-d472-41d6-ae1e-606553a7073c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.useful-links
+  module:
+    - system
+  theme:
+    - cspi
+id: usefullinks_cspi
+theme: cspi
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:useful-links'
+settings:
+  id: 'system_menu_block:useful-links'
+  label: 'Useful Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

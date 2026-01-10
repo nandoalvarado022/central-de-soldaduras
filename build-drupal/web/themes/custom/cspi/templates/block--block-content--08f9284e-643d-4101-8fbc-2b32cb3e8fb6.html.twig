@@ -1,0 +1,45 @@
+{# 2 Bloques uno debajo del otro #}
+
+{# <div class="personalized-block">
+	Contenido: {{ content }}
+</div> #}
+{% set view_results = drupal_view_result('home_2_articles_side_next_to_side', 'default') %}
+
+	<div class="field--name-field-mt-dfb-detailed-feature field--type-entity-reference-revisions"> {% if view_results %}
+		{% for row in view_results %}
+			{% set node = row._entity %}
+			<div class="field__item">
+				<div class="detailed-feature-block__section">
+					{% set bg_url = node.field_image.entity ? file_url(node.field_image.entity.uri.value) : '' %}
+					<div class="detailed-feature-block__background-image d-xl-block d-none" style="background-image:url({{ bg_url }});">
+						&nbsp;
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6">
+								<img class="d-block d-xl-none rounded-0 mb-5" src="/drupalizing/drz-demo-catalog-lite/site/sites/default/files/inline-images/detailed-feature-1.jpg" data-entity-uuid="68a37e81-8e30-4d4a-8043-a9c57faa64e9" data-entity-type="file" alt="">
+							</div>
+							<div class="col-xl-5 col-lg-6">
+								<h2 class="mt-0 mb-5">
+									{{ node.title.value }}
+								</h2>
+								<div class="clearfix text-formatted field field--name-field-mt-detailed-feature-body field--type-text-long field--label-hidden field__item">
+									<p>
+										{% if node.body.summary %}
+											{{ node.body.summary }}
+										{% else %}
+											{{ node.body.value|striptags|trim|slice(0, 240) ~ (node.body.value|striptags|length > 240 ? '…' : '') }}
+										{% endif %}
+									</p>
+								</div>
+								<p>
+									<a class="button d-block d-md-inline-block" href="node">Ver artículo</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	{% endif %}
+</div>

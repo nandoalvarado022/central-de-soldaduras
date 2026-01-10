@@ -5,9 +5,9 @@ dependencies:
   module:
     - search
   theme:
-    - catalog_lite
+    - cspi
 id: catalog_lite_searchform
-theme: catalog_lite
+theme: cspi
 region: header_top_second
 weight: 0
 provider: null

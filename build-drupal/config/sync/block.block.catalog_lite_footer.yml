@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - catalog_lite
+    - cspi
 _core:
   default_config_hash: 2GI6p-N0sRS40Ldk57HHPoD3pHGwbSFudnPBaT3UZ6c
 id: catalog_lite_footer
-theme: catalog_lite
+theme: cspi
 region: sub_footer_top_second
 weight: -8
 provider: null

@@ -1,0 +1,31 @@
+uuid: c7438a86-0a42-4ca2-aee1-f3c682506279
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:099c25fb-8604-41f9-9b5d-b996a36ef80c'
+  module:
+    - block_content
+    - system
+  theme:
+    - cspi
+id: aleftsidebarblock_cspi
+theme: cspi
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:099c25fb-8604-41f9-9b5d-b996a36ef80c'
+settings:
+  id: 'block_content:099c25fb-8604-41f9-9b5d-b996a36ef80c'
+  label: 'A left sidebar block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/5
